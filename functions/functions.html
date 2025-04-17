@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Javascript Functions</title>
+</head>
+
+<style>
+  body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #000000;
+    padding: 20px;
+  }
+
+  details{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  summary{
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+</style>
+
+<body>
+  <h1>Gilbert Lerion</h1>
+  <h3>open console logs</h3>
+  <h3>Definitions</h3>
+  <details>
+    <summary>Named Functions</summary>
+    <p> Are traditional functions declared with the function keyword followed by the name of the function
+      <br>
+      <br>Example:
+      <br>function add(a,b){ <br>
+          &nbsp; return a + b; <br>
+          } <br>
+          console.log(add(1,3));
+    </p>
+  </details>
+  
+  <details>
+    <summary>Arrow Functions</summary>
+    <p> Arrow functions allow you to write functions with less code. They are defined using the arrow (=>) syntax and do not have their own this context. <br>
+      Arrow functions are not suitable as object methods where you need a dynamic this, nor can they be used as constructors
+      <br>
+      <br>Example:
+      <br>const subtract = (a,b) =>{ <br>
+          &nbsp; return a - b; <br>
+          } <br>
+          console.log(subtract(5,2));
+    </p>
+  </details>
+
+  <details>
+    <summary>Async Functions</summary>
+    <p> Are functions declared with the async keyword followed by the name of the function <br>
+      Async functions always return a promise, and the await keyword is used to wait for the promise to resolve before continuing with the rest of the code.
+
+      <br>
+      <br>Example:
+      <br>async function fetchData(){ <br>
+          &nbsp; const data = await fetch('https://jsonplaceholder.typicode.com/posts/1'); <br>
+          &nbsp; return data.json();<br>
+      }
+      <br>
+      console.log(fetchData());
+  </details>
+
+  <button id="button">Press me</button>
+  
+</body>
+</html>
+<script>
+
+  // Named Function
+  function add(a,b){
+      return a + b; 
+  }
+  
+  console.log(`The sum of 1 and 3 is ${add(1,3)}`); // Answer : 4
+  
+  // Arrow Functions 
+  const subtract = (a,b) =>{
+      return a - b;
+  }
+  console.log(`The difference between 5 and 2 is ${subtract(5,2)}`); // Answer : 3
+
+  const button = document.getElementById('button');
+  button.addEventListener('click',(e)=>{
+    console.log('Button clicked!');
+  });
+  
+
+  //Async Function
+  async function fetchData(){
+    const data = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+    return data.json();
+  }
+
+  console.log(fetchData()); // Answer : Promise { <pending> }
+  
+  </script>
