@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+.game-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.letter-btn {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.letter-btn:hover:not(:disabled) {
+  background-color: #555;
+}
+.letter-btn:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+}
+#guess {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 12px;
+  background-color: #222;
+  color: white;
+  border: none;
+}
+.status-bar {
+  font-size: 1.1rem;
+}
+.guess-word {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+.guess-box {
+  width: 50px;
+  height: 50px;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid #444;
+  transition: background 0.2s;
+}
+
+/* Modal styling to match card look */
+#gameSummaryModal .modal-content {
+    background: #212529;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#gameSummaryModal .modal-header,
+#gameSummaryModal .modal-footer {
+    border: none;
+    background: transparent;
+}
+
+#gameSummaryModal .modal-title {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#gameSummaryModal .btn-primary {
+    background: #0d6efd;
+    border: none;
+}
+
+#gameSummaryModal .btn-secondary {
+    background: #6c757d;
+    border: none;
+}
+
+#gameSummaryModal .modal-body p {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+}
