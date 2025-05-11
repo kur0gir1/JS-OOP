@@ -1,0 +1,134 @@
+.card {
+  margin-bottom: 20px;
+}
+.badge-bonus {
+  font-size: 1rem;
+}
+.form-control,
+.form-select {
+  border-color: #495057;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: #495057;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.employee-type-badge {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  z-index: 1;
+}
+.card-header.manager {
+  background-color: rgba(255, 193, 7, 0.2);
+}
+.card-header.developer {
+  background-color: rgba(13, 110, 253, 0.2);
+}
+.card-header.programmer {
+  background-color: rgba(25, 135, 84, 0.2);
+}
+
+/* Profile Image Styles */
+.profile-image-container {
+  width: 90px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #343a40;
+  border: 2px solid #6c757d;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image:hover {
+  border-color: #fff;
+  background-color: #495057;
+}
+
+.profile-icon {
+  font-size: 2.5rem;
+  color: #adb5bd;
+}
+
+.change-profile-btn {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.2rem;
+}
+
+/* Profile Colors and Icons */
+.profile-color-1 { background-color: #0d6efd; }
+.profile-color-2 { background-color: #198754; }
+.profile-color-3 { background-color: #dc3545; }
+.profile-color-4 { background-color: #ffc107; color: #212529; }
+.profile-color-5 { background-color: #6610f2; }
+.profile-color-6 { background-color: #fd7e14; }
+
+/* Profile modal styles */
+.profile-color-option {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.profile-color-option:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.profile-icon-option.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.profile-icon-option:hover {
+  background-color: #495057;
+}
+
+.profile-icon-1 { font-size: 2.5rem; }
+.profile-icon-2 { font-size: 2.5rem; }
+.profile-icon-3 { font-size: 2.5rem; }
+.profile-icon-4 { font-size: 2.5rem; }
+.profile-icon-5 { font-size: 2.5rem; }
+.profile-icon-6 { font-size: 2.5rem; }
+
+/* Make placeholder text more visible in dark mode inputs */
+::placeholder {
+  color: #adb5bd !important;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #adb5bd !important;
+}
+
+::-ms-input-placeholder {
+  color: #adb5bd !important;
+}
